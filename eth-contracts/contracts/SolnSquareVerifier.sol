@@ -19,7 +19,7 @@ contract SolnSquareVerifier is SquareVerifier, CustomERC721Token {
         bool verified;
     }
 
-    // struct Proof {
+    // struct ProofSolns {
     //   uint[2] a;
     //   uint[2] b;
     //   uint[2] c;
@@ -63,12 +63,21 @@ contract SolnSquareVerifier is SquareVerifier, CustomERC721Token {
         }
 
 // TODO Create a function to mint new NFT only after the solution has been verified
-    function mintNewNFT(address to, uint256 tokenId) 
+    function mintNewNFT(
+            address to, 
+            uint256 tokenId, 
+            Proof memory proof,
+            uint[2] memory a,
+            uint[2] [2] memory b, 
+            uint[2] memory c, 
+            uint[1] memory input
+            ) 
         public 
         {
             //  - make sure the solution is unique (has not been used before)
             require(!solutionMapping[tokenId].verified, "Solution already exists");
             //  - make sure you handle metadata as well as tokenSuplly
+            addSolution(to, tokenId, proof, a, b, c, input);
             super.mint(to, tokenId);
         }
 }
