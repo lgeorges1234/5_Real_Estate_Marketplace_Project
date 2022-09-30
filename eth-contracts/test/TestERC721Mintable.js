@@ -1,6 +1,6 @@
 var ERC721MintableComplete = artifacts.require('CustomERC721Token');
 
-contract('TestERC721Mintable', accounts => {
+contract('ERC721Mintable', accounts => {
 
     const owner = accounts[0];
     const account_one = accounts[1];
