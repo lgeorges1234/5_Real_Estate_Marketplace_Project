@@ -62,6 +62,7 @@ Tests for smart contracts are available.
 
 `https://testnets.opensea.io/fr/collection/unidentified-contract-0zvwnbvb8v`
 
+![Opensea Frontend](./doc/capture/OpenseaFrontendCapture.PNG "Opensea Frontend")
 
 - Sales of two tokens
 <br/>
