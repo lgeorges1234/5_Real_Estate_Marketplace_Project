@@ -12,17 +12,21 @@ To install, download or clone the repo, then:
 
 `cd eth-contract`
 
-`truffle --netword dev compile`
+To compile your contract, two pre-setup networks are available:
+- "dev" for Ganache UI.
+- "development" for Ganache CLI
+
+`truffle --network dev compile` or `truffle --network development compile`
 <br/><br/>
 
 ## Test
 <br/>
-Tests for smart contracts are available.
+Tests for each smart contract are present in /eth-contracts/test/ folder
 <br/><br/>
 
 `cd eth-contract`
 
-`truffle --netword dev compile`
+`truffle --network dev test` or `truffle --network development test`
 
 <br/>
 
@@ -40,14 +44,19 @@ Tests for smart contracts are available.
 <br/>
 
 ## Contract address
+<br/>
 
 > Because of visibility issues in Opensea, the contract has been deployed on the goerly test network.
 <br/>
 
 ### Contract address 'SolnSquareVerifier'
-<br/>
 
 0x89Cd8929E82B0CA1D60c87634caA560168637454
+<br/>
+
+### ABI
+
+['SolnSquareVerifier' ABI](./doc/SolnSquareVerifierABI.json)
 <br/>
 
 ### Links
@@ -67,12 +76,21 @@ Tests for smart contracts are available.
 - Sales of two tokens
 <br/>
 
-![First sale](./doc/capture/firstSaleCapture.PNG "First sale")
+[First sale](./doc/capture/firstSaleCapture.PNG)
 <br/>
 
-![Second sale](./doc/capture/secondSaleCapture.PNG "Second sale")
-
+[Second sale](./doc/capture/secondSaleCapture.PNG)
 <br/>
+
+[Third sale](./doc/capture/thirdSaleCapture.PNG)
+<br/>
+
+[Fourth sale](./doc/capture/fourthSaleCapture.PNG)
+<br/>
+
+[Fifth sale](./doc/capture/fifthSaleCapture.PNG)
+<br/>
+
 
 ## Project Resources
 
